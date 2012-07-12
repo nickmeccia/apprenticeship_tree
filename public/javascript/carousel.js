@@ -1,5 +1,5 @@
 $(window).load(function() {
-    var $ul = $('ul.asdf');
+    var $ul = $('ul.slides');
     var $lis = $('li.slide');
     var numLis = $lis.length;
     var $div = $('div#slideshow');
@@ -49,32 +49,135 @@ $(window).load(function() {
         $ul.css('left', '-=' + dist);
     }
 
-    $('a.right').click(function(event) {
-        refreshLis();
-
-        event.preventDefault();
-        var li = $(this).closest('li.slide');
-        var idx = $lis.index(li);
-        if(idx === numLis - 1) nextIdx = 0;
-        else nextIdx = idx + 1;
-
-        var nextImg = $lis.eq(nextIdx);
-        centerImg(nextImg, firstToLast);
-    })
 
 
-    $('a.left').click(function(event) {
-        refreshLis();
-        event.preventDefault();
-        var li = $(this).closest('li.slide');
-        var idx = $lis.index(li);
-        if(idx === 0) nextIdx = numLis - 1;
-        else nextIdx = idx - 1;
 
-        var nextImg = $lis.eq(nextIdx);
-        centerImg(nextImg, lastToFirst);
-    })
-		
+
+		$('a.right').click(function(event) {
+		    refreshLis();
+
+		    event.preventDefault();
+		    var li = $(this).closest('li.slide');
+		    var idx = $lis.index(li);
+		    if(idx === numLis - 1) nextIdx = 0;
+		    else nextIdx = idx + 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, firstToLast);
+		})
+
+
+		$('a.left').click(function(event) {
+		    refreshLis();
+		    event.preventDefault();
+		    var li = $(this).closest('li.slide');
+		    var idx = $lis.index(li);
+		    if(idx === 0) nextIdx = numLis - 1;
+		    else nextIdx = idx - 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, lastToFirst);
+		})
+
+		// navigation links
+
+		$('a.micah').click(function(event) {
+		    refreshLis();
+
+		    event.preventDefault();
+		    var li = $('li.two');
+		    var idx = $lis.index(li);
+		    if(idx === numLis - 1) nextIdx = 0;
+		    else nextIdx = idx + 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, firstToLast);
+		})
+
+		$('a.cory').click(function(event) {
+		    refreshLis();
+
+		    event.preventDefault();
+		    var li = $('li.three');
+		    var idx = $lis.index(li);
+		    if(idx === numLis - 1) nextIdx = 0;
+		    else nextIdx = idx + 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, firstToLast);
+		})
+
+		$('a.doug').click(function(event) {
+		    refreshLis();
+
+		    event.preventDefault();
+		    var li = $('li.four');
+		    var idx = $lis.index(li);
+		    if(idx === numLis - 1) nextIdx = 0;
+		    else nextIdx = idx + 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, firstToLast);
+		})
+
+		$('a.billy').click(function(event) {
+		    refreshLis();
+
+		    event.preventDefault();
+		    var li = $('li.five');
+		    var idx = $lis.index(li);
+		    if(idx === numLis - 1) nextIdx = 0;
+		    else nextIdx = idx + 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, firstToLast);
+		})
+
+		$('a.eric').click(function(event) {
+		    refreshLis();
+
+		    event.preventDefault();
+		    var li = $('li.six');
+		    var idx = $lis.index(li);
+		    if(idx === numLis - 1) nextIdx = 0;
+		    else nextIdx = idx + 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, firstToLast);
+		})
+
+		$('a.jim').click(function(event) {
+		    refreshLis();
+
+		    event.preventDefault();
+		    var li = $('li.seven');
+		    var idx = $lis.index(li);
+		    if(idx === numLis - 1) nextIdx = 0;
+		    else nextIdx = idx + 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, firstToLast);
+		})
+
+		$('a.craig').click(function(event) {
+		    refreshLis();
+
+		    event.preventDefault();
+		    var li = $('li.one');
+		    var idx = $lis.index(li);
+		    if(idx === numLis - 1) nextIdx = 0;
+		    else nextIdx = idx + 1;
+
+		    var nextImg = $lis.eq(nextIdx);
+		    centerImg(nextImg, firstToLast);
+		})
+
+
+
+
+
+
 		var shift = -1*calculateOffsetForImage($lis.eq(2));
 		$ul.css('left', shift);
+		$('li.three').addClass('center');
 })
