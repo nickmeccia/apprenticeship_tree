@@ -1,85 +1,146 @@
-$(window).load(function() {
-    var $ul = $('ul.slides');
-    var $lis = $('li.slide');
-    var numLis = $lis.length;
-    var $div = $('div#slideshow');
+function Carousel(selector) {
+    this.$el = $(selector);
+    this.parent = this.$el.parent();
+    this.parentWidth = this.parent.width();
+    this.numChildren = this.$el.children().length;
+    this.center = null;
 
-    var divWidth = $div.width();
+    this.makeLinksWork();
+}
 
-    function refreshLis() {
-        $lis = $('li.slide');
+Carousel.prototype.makeLinksWork = function() {
+    var self = this;
+    this.$el.delegate('a.right', 'click', function() {
+        var idx = self.indexOfCenter();
+        if(idx === self.NumChildren - 1) idx = 0;
+        else idx++;
+
+        self.centerElement(self.$el.children().eq(idx), true)
+    })
+
+    this.$el.delegate('a.left', 'click', function() {
+        var idx = self.indexOfCenter();
+        if(idx === 0) idx = self.numChildren - 1;
+        else idx--;
+
+        self.centerElement(self.$el.children().eq(idx), true)
+    })
+}
+
+Carousel.prototype.indexOfCenter = function() {
+    return this.$el.children().index(this.center);
+}
+
+Carousel.prototype.offsetForCentering = function(el) {
+    var leftPosition = $(el).position().left;
+    var width = $(el).width();
+    return -1*(leftPosition + width/2 - this.parentWidth/2);
+}
+
+Carousel.prototype.addDuplicatesOnEnd = function() {
+    var children = this.$el.children();
+    var left = children.clone();
+    var right = children.clone();
+
+    this.$el.prepend(left).append(right);
+}
+
+Carousel.prototype.removeDuplicatesOnEnd = function() {
+    var self = this;
+    var centerIdx = this.indexOfCenter();
+    var left, right;
+
+    if(this.numChildren % 2 === 0) {
+        left = centerIdx - this.numChildren/2 + 1;
+        right = centerIdx + this.numChildren/2;
+    }
+    else {
+        left = centerIdx - (this.numChildren - 1)/2;
+        right = centerIdx + (this.numChildren - 1)/2;
     }
 
-    function removeCenterClass() {
-        $('.center').each(function() {
-            $(this).removeClass('center')
+    this.$el.children().each(function(idx) {
+        if(idx < left || idx > right) {
+            $(this).remove();
+        }
+    })
+}
+
+Carousel.prototype.removeCenterClass = function() {
+    $('.center').each(function() {
+        $(this).removeClass('center');
+    })
+}
+
+Carousel.prototype.distanceFromCenter = function(el) {
+    el = $(el).get(0);
+    var children = this.$el.children();
+    var centerIdx = children.index(this.center);
+    var targetIdx = children.index(el);
+    var dist = targetIdx - centerIdx;
+
+
+    if(Math.abs(dist) > this.numChildren/2) {
+        if(dist >= 0) dist -= this.numChildren;
+        else dist += this.numChildren;
+    }
+    return dist;
+}
+
+Carousel.prototype.centerElement = function(el, scroll) {
+    if(scroll && $(el).get(0) === $(this.center).get(0)) return;
+    this.removeCenterClass();
+    if(scroll) {
+        var self = this;
+        if(self.scrolling) return;
+        self.scrolling = true;
+
+        var dist = self.distanceFromCenter(el);
+        self.addDuplicatesOnEnd();
+        self.centerElement(self.center)
+
+        var children = this.$el.children();
+        var currentCenterIdx = children.index(this.center);
+        this.center = children.get(currentCenterIdx + dist);
+        var offset = self.offsetForCentering(this.center);
+
+        this.$el.animate({left: offset}, 'slow', function() {
+            self.scrolling = false;
+            $(self.center).addClass('center');
+            self.removeDuplicatesOnEnd();
+            self.centerElement(self.center);
         })
-    };
-
-    function calculateOffsetForImage(img) {
-        var leftPosition = $(img).position().left;
-        var imgWidth = $(img).width();
-        return leftPosition + imgWidth/2 - divWidth/2;
     }
-
-    function centerImg(img, cb) {
-        var shift = -1*calculateOffsetForImage(img);
-        $ul.animate({left: shift}, 'medium', function() {
-            refreshLis();
-            removeCenterClass();
-            $(img).addClass('center')
-            cb();
-        });
+    else {
+        this.center = el;
+        $(this.center).addClass('center');
+        var offset = this.offsetForCentering(el);
+        this.$el.css('left', offset);
     }
+}
 
-    function firstToLast() {
-        var first = $lis.eq(0);
-        var second = $lis.eq(1);
-        var secondPosition = second.position().left;
-        $ul.append(first);
-        $ul.css('left', '+=' + secondPosition)
-    } 
+Carousel.prototype.hookUp = function(name, liSel) {
+    var self = this;
+    $(sel).click(function() {
+        var el = self.$el.find(liSel)
+        self.centerElement(el, true);
+    })
+}
 
-    function lastToFirst() {
-        var first = $lis.eq(0);
-        var last = $lis.eq(-1);
 
-        $ul.prepend(last);
-        var dist = first.position().left;
-        $ul.css('left', '-=' + dist);
+$(window).load(function() {
+    c = new Carousel('ul.slides');
+    c.centerElement(c.$el.children().eq(2));
+    var links = {
+        '.jim': '.one',
+        '.craig': '.two',
+        '.micah': '.three',
+        '.cory': '.four',
+        '.doug': '.five',
+        '.billy': '.six',
+        '.eric': '.seven'
     }
-
-
-
-
-
-		$('a.right').click(function(event) {
-		    refreshLis();
-
-		    event.preventDefault();
-		    var li = $(this).closest('li.slide');
-		    var idx = $lis.index(li);
-		    if(idx === numLis - 1) nextIdx = 0;
-		    else nextIdx = idx + 1;
-
-		    var nextImg = $lis.eq(nextIdx);
-		    centerImg(nextImg, firstToLast);
-		})
-
-
-		$('a.left').click(function(event) {
-		    refreshLis();
-		    event.preventDefault();
-		    var li = $(this).closest('li.slide');
-		    var idx = $lis.index(li);
-		    if(idx === 0) nextIdx = numLis - 1;
-		    else nextIdx = idx - 1;
-
-		    var nextImg = $lis.eq(nextIdx);
-		    centerImg(nextImg, lastToFirst);
-		})
-
-		var shift = -1*calculateOffsetForImage($lis.eq(2));
-		$ul.css('left', shift);
-		$('li.three').addClass('center');
+    for(sel in links) {
+        c.hookUp(sel, links[sel]);
+    }
 })

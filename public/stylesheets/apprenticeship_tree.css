@@ -89,7 +89,6 @@ div#slideshow {
  LISTS                                                                                 */
 
 dl {
-	display: none;
 	position: fixed;
 	width: 150px;
 	height: 180px;
