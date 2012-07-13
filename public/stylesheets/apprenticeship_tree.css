@@ -89,6 +89,7 @@ div#slideshow {
  LISTS                                                                                 */
 
 dl {
+	display: none;
 	position: fixed;
 	width: 150px;
 	height: 180px;
@@ -151,7 +152,7 @@ li.slide ul li a {
 	width: 260px;
 	text-align: center;
 }
-figcaption {
+li.slide figcaption {
 	display: block;
 	text-align: left;
 	white-space: normal;
@@ -166,13 +167,13 @@ figcaption {
 	padding: 13px 10px;
 	overflow: hidden;
 }
-figcaption a {
+li.slide figcaption a {
 	position: static !important; 
 }
-figcaption.left {
+li.slide figcaption.left {
 	left: -180px;
 }
-figcaption.right {
+li.slide figcaption.right {
 	left: 250px;
 }
 ol li:hover figcaption,
