@@ -341,19 +341,36 @@ ol li:hover img.hover {
 	div#slideshow {
 		width: 640px;
 		height: 8000px;
-		margin: 0 auto !important;
+		display: block;
+		margin: 0 auto;
 	}
 	li.slide {
 		display: block;
 	}
+	li.slide figcaption.left,
+	li.slide figcaption.right {
+		position: fixed;
+		width: 100%;
+		height: 20px;
+		top: 0px;
+		left: 0px;
+	}
+	li.slide figcaption {
+		padding-left: 64px;
+		position: relative;
+	}
+	li.slide figcaption h1 {
+		display: inline;
+	}
+	li.slide figcaption p {
+		display: none;
+	}
+	li.slide figcaption a {
+		padding-left: 15px;
+	}
 	a.previous img,
 	a.next img {
 		display: none;
-	}
-	figcaption.left,
-	figcaption.right {
-		left: 30px !important;
-		top: 270px !important;
 	}
 }
 @media only screen and (max-device-width: 480px) {
@@ -363,19 +380,36 @@ ol li:hover img.hover {
 	div#slideshow {
 		width: 640px;
 		height: 8000px;
-		margin: 0 auto !important;
+		display: block;
+		margin: 0 auto;
 	}
 	li.slide {
 		display: block;
 	}
+	li.slide figcaption.left,
+	li.slide figcaption.right {
+		position: fixed;
+		width: 100%;
+		height: 20px;
+		top: 0px;
+		left: 0px;
+	}
+	li.slide figcaption {
+		padding-left: 64px;
+		position: relative;
+	}
+	li.slide figcaption h1 {
+		display: inline;
+	}
+	li.slide figcaption p {
+		display: none;
+	}
+	li.slide figcaption a {
+		padding-left: 15px;
+	}
 	a.previous img,
 	a.next img {
 		display: none;
-	}
-	figcaption.left,
-	figcaption.right {
-		left: 30px;
-		top: 270px;
 	}
 }
 
