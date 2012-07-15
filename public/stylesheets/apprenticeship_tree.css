@@ -167,7 +167,8 @@ li.slide figcaption {
 	overflow: hidden;
 }
 li.slide figcaption a {
-	position: static !important; 
+	position: static !important;
+	padding-left: 15px;
 }
 li.slide figcaption.left {
 	left: -180px;
@@ -365,9 +366,6 @@ ol li:hover img.hover {
 	li.slide figcaption p {
 		display: none;
 	}
-	li.slide figcaption a {
-		padding-left: 15px;
-	}
 	a.previous img,
 	a.next img {
 		display: none;
@@ -403,9 +401,6 @@ ol li:hover img.hover {
 	}
 	li.slide figcaption p {
 		display: none;
-	}
-	li.slide figcaption a {
-		padding-left: 15px;
 	}
 	a.previous img,
 	a.next img {
@@ -443,9 +438,6 @@ ol li:hover img.hover {
 	}
 	li.slide figcaption p {
 		display: none;
-	}
-	li.slide figcaption a {
-		padding-left: 15px;
 	}
 	a.previous img,
 	a.next img {
