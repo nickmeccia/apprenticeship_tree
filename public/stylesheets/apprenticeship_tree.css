@@ -1,5 +1,5 @@
 body {
-	background: #80d9ff; /* #66d1ff  /* #26a8e0; */
+	background: #abe6ff; /*#80d9ff; /* #66d1ff  /* #26a8e0; */
 	color: black;
 	font-family: 'CopseRegular', sans-serif;
 	font-size: 16px;
@@ -346,8 +346,8 @@ ol li:hover img.hover {
 	li.slide {
 		display: block;
 	}
-	a.left img,
-	a.right img {
+	a.previous img,
+	a.next img {
 		display: none;
 	}
 	figcaption.left,
@@ -368,8 +368,8 @@ ol li:hover img.hover {
 	li.slide {
 		display: block;
 	}
-	a.left img,
-	a.right img {
+	a.previous img,
+	a.next img {
 		display: none;
 	}
 	figcaption.left,
@@ -386,20 +386,36 @@ ol li:hover img.hover {
 	div#slideshow {
 		width: 640px;
 		height: 8000px;
-		margin: 0 auto !important;
+		display: block;
+		margin: 0 auto;
 	}
 	li.slide {
 		display: block;
 	}
-	a.left img,
-	a.right img {
-		display: none;
-	}
-	figcaption.left,
-	figcaption.right {
+	li.slide figcaption.left,
+	li.slide figcaption.right {
 		position: fixed;
+		width: 100%;
+		height: 20px;
 		top: 0px;
 		left: 0px;
+	}
+	li.slide figcaption {
+		padding-left: 64px;
+		position: relative;
+	}
+	li.slide figcaption h1 {
+		display: inline;
+	}
+	li.slide figcaption p {
+		display: none;
+	}
+	li.slide figcaption a {
+		padding-left: 15px;
+	}
+	a.previous img,
+	a.next img {
+		display: none;
 	}
 }
 

@@ -12,6 +12,7 @@
 			[:figcaption.left
 				[:h1 "craig demyanovich"]
 				[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+				[:a {:href "http://www.8thlight.com/our-team/craig-demyanovich"} "profile"]
 				[:a {:href "http://blog.8thlight.com/craig-demyanovich/archive.html"} "blog"]]]
 		[:ol
 			[:li#michael_baker
@@ -22,6 +23,7 @@
 				[:figcaption.left
 					[:h1 "michael baker"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/michael-baker"} "profile"]
 					[:a {:href "http://blog.8thlight.com/michael-baker/archive.html"} "blog"]]]]]
 	[:a.next {:href "#"}
 		[:img.display {:src "./images/hand_right.png"}]

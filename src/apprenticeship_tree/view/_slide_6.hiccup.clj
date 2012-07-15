@@ -12,6 +12,7 @@
 			[:figcaption.right
 				[:h1 "billy whited"]
 				[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+				[:a {:href "http://blog.8thlight.com/billy-whited/archive.html"} "profile"]
 				[:a {:href "http://blog.8thlight.com/billy-whited/archive.html"} "blog"]]]
 		[:ol
 			[:li#stephanie_briones
@@ -22,6 +23,7 @@
 				[:figcaption.right
 					[:h1 "stephanie briones"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/stephanie-briones"} "profile"]
 					[:a {:href "http://blog.8thlight.com/stephanie-briones/archive.html"} "blog"]]]]]
 	[:a.next {:href "#"}
 		[:img.display {:src "./images/hand_right.png"}]

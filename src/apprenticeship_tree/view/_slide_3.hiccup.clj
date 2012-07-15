@@ -12,6 +12,7 @@
 			[:figcaption.left
 				[:h1 "micah martin"]
 				[:p "Here is some information about Micah, such as how he plays guitar and stuff."]
+				[:a {:href "http://www.8thlight.com/our-team/micah-martin"} "profile"]
 				[:a {:href "http://blog.8thlight.com/micah-martin/archive.html"} "blog"]]]
 		[:ol
 			[:li#justin_martin
@@ -22,7 +23,8 @@
 				[:figcaption.left
 					[:h1 "justin martin"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
-					[:a {:href "#"} "blog"]]]
+					[:a "profile"]
+					[:a {:href "http://blog.8thlight.com/justin-martin/archive.html"} "blog"]]]
 			[:li#paul_pagel
 				[:img {:src "./images/paul_pagel_photo.png"}]
 				[:img.hover {:src "./images/paul_pagel_hover.png"}]
@@ -31,6 +33,7 @@
 				[:figcaption.right
 					[:h1 "paul pagel"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/paul-pagel"} "profile"]
 					[:a {:href "http://blog.8thlight.com/paul-pagel/archive.html"} "blog"]]]
 			[:ol
 				[:li#eric_meyer
@@ -41,6 +44,7 @@
 					[:figcaption.right
 						[:h1 "eric meyer"]
 						[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+						[:a {:href "http://www.8thlight.com/our-team/eric-meyer"} "profile"]
 						[:a {:href "http://blog.8thlight.com/eric-meyer/archive.html"} "blog"]]]
 				[:li#brian_pratt
 					[:img {:src "./images/brian_pratt_photo.png"}]
@@ -50,6 +54,7 @@
 					[:figcaption.right
 						[:h1 "brian pratt"]
 						[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+						[:a {:href "http://www.8thlight.com/our-team/brian-pratt"} "profile"]
 						[:a {:href "http://blog.8thlight.com/brian-pratt/archive.html"} "blog"]]]
 				[:li#kevin_liddle
 					[:img {:src "./images/kevin_liddle_photo.png"}]
@@ -59,6 +64,7 @@
 					[:figcaption.right
 						[:h1 "kevin liddle"]
 						[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+						[:a {:href "http://www.8thlight.com/our-team/kevin-liddle"} "profile"]
 						[:a {:href "http://blog.8thlight.com/kevin-liddle/archive.html"} "blog"]]]
 				[:li#patrick_gombert
 					[:img {:src "./images/patrick_gombert_photo.png"}]
@@ -68,6 +74,7 @@
 					[:figcaption.right
 						[:h1 "patrick gombert"]
 						[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+						[:a {:href "http://www.8thlight.com/our-team/patrick-gombert"} "profile"]
 						[:a {:href "http://blog.8thlight.com/patrick-gombert/archive.html"} "blog"]]]]
 			[:li#colin_jones
 				[:img {:src "./images/colin_jones_photo.png"}]
@@ -77,6 +84,7 @@
 				[:figcaption.left
 					[:h1 "colin jones"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/colin-jones"} "profile"]
 					[:a {:href "http://blog.8thlight.com/colin-jones/archive.html"} "blog"]]]
 			[:ol
 				[:li#mark_grant
@@ -87,6 +95,7 @@
 					[:figcaption.left
 						[:h1 "mark grant"]
 						[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+						[:a {:href "http://www.8thlight.com/our-team/mark-grant"} "profile"]
 						[:a {:href "http://blog.8thlight.com/mark-grant/archive.html"} "blog"]]]]
 			[:li#steve_kim
 				[:img {:src "./images/steve_kim_photo.png"}]
@@ -96,6 +105,7 @@
 				[:figcaption.left
 					[:h1 "steve kim"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/steve-kim"} "profile"]
 					[:a {:href "http://blog.8thlight.com/steve-kim/archive.html"} "blog"]]]
 			[:li#dave_moore
 				[:img {:src "./images/dave_moore_photo.png"}]
@@ -105,6 +115,7 @@
 				[:figcaption.left
 					[:h1 "dave moore"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/dave-moore"} "profile"]
 					[:a {:href "http://blog.8thlight.com/dave-moore/archive.html"} "blog"]]]
 			[:li#myles_megyesi
 				[:img {:src "./images/myles_megyesi_photo.png"}]
@@ -114,6 +125,7 @@
 				[:figcaption.left
 					[:h1 "myles megyesi"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/myles-megyesi"} "profile"]
 					[:a {:href "http://blog.8thlight.com/myles-megyesi/archive.html"} "blog"]]]
 			[:li#wai_lee_chin_feman
 				[:img {:src "./images/wai_lee_chin_feman_photo.png"}]
@@ -123,6 +135,7 @@
 				[:figcaption.left
 					[:h1 "wai lee chin feman"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/wai-lee-chin-feman"} "profile"]
 					[:a {:href "http://blog.8thlight.com/wai-lee-chin-feman/archive.html"} "blog"]]]
 			[:li#chris_peak
 				[:img {:src "./images/chris_peak_photo.png"}]
@@ -132,6 +145,7 @@
 				[:figcaption.left
 					[:h1 "chris peak"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/chris-peak"} "profile"]
 					[:a {:href "http://blog.8thlight.com/chris-peak/archive.html"} "blog"]]]]]
 	[:a.next {:href "#"}
 		[:img.display {:src "./images/hand_right.png"}]

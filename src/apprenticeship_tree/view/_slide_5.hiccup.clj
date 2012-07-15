@@ -8,10 +8,11 @@
 			[:img {:src "./images/doug_bradbury_photo.png"}]
 			[:img.hover {:src "./images/doug_bradbury_hover.png"}]
 			[:img {:src "./images/doug_bradbury_frame.png"}]
-			[:a{:href "http://www.8thlight.com/our-team/doug-bradbury"} "doug bradbury"]
+			[:a {:href "http://www.8thlight.com/our-team/doug-bradbury"} "doug bradbury"]
 			[:figcaption.left
 				[:h1 "doug bradbury"]
 				[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+				[:a {:href "http://www.8thlight.com/our-team/doug-bradbury"} "profile"]
 				[:a {:href "http://blog.8thlight.com/doug-bradbury/archive.html"} "blog"]]]
 		[:ol
 			[:li#li-hsuan_lung
@@ -22,6 +23,7 @@
 				[:figcaption.left
 					[:h1 "li-hsuan lung"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/lihsuan-lung"} "profile"]
 					[:a {:href "http://blog.8thlight.com/lihsuan-lung/archive.html"} "blog"]]]
 			[:li#josh_cheek
 				[:img {:src "./images/josh_cheek_photo.png"}]
@@ -31,6 +33,7 @@
 				[:figcaption.right
 					[:h1 "josh cheek"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/josh-cheek"} "profile"]
 					[:a {:href "http://blog.8thlight.com/josh-cheek/archive.html"} "blog"]]]
 			[:li#cymen_vig
 				[:img {:src "./images/cymen_vig_photo.png"}]
@@ -40,6 +43,7 @@
 				[:figcaption.left
 					[:h1 "cymen vig"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/cymen-vig"} "profile"]
 					[:a {:href "http://blog.8thlight.com/cymen-vig/archive.html"} "blog"]]]]]
 	[:a.next {:href "#"}
 		[:img.display {:src "./images/hand_right.png"}]

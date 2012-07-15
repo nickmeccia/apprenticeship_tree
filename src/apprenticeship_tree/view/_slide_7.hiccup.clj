@@ -12,6 +12,7 @@
 			[:figcaption.left
 				[:h1 "eric smith"]
 				[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+				[:a {:href "http://www.8thlight.com/our-team/eric-smith"} "profile"]
 				[:a {:href "http://blog.8thlight.com/eric smith/archive.html"} "blog"]]]
 		[:ol
 			[:li#steven_degutis
@@ -22,6 +23,7 @@
 				[:figcaption.left
 					[:h1 "steven degutis"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/steven-degutis"} "profile"]
 					[:a {:href "http://blog.8thlight.com/steven-degutis/archive.html"} "blog"]]]
 			[:li#dariusz_pasciak
 				[:img {:src "./images/dariusz_pasciak_photo.png"}]
@@ -31,6 +33,7 @@
 				[:figcaption.right
 					[:h1 "dariusz pasciak"]
 					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a {:href "http://www.8thlight.com/our-team/dariusz-pasciak"} "profile"]
 					[:a {:href "http://blog.8thlight.com/dariusz-pasciak/archive.html"} "blog"]]]]]
 	[:a.next {:href "#"}
 		[:img.display {:src "./images/hand_right.png"}]
