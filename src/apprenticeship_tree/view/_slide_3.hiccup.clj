@@ -15,16 +15,6 @@
 				[:a {:href "http://www.8thlight.com/our-team/micah-martin"} "profile"]
 				[:a {:href "http://blog.8thlight.com/micah-martin/archive.html"} "blog"]]]
 		[:ol
-			[:li#justin_martin
-				[:img {:src "./images/justin_martin_photo.png"}]
-				[:img.hover {:src "./images/justin_martin_hover.png"}]
-				[:img {:src "./images/justin_martin_frame.png"}]
-				[:a "justin martin"]
-				[:figcaption.left
-					[:h1 "justin martin"]
-					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
-					[:a "profile"]
-					[:a {:href "http://blog.8thlight.com/justin-martin/archive.html"} "blog"]]]
 			[:li#paul_pagel
 				[:img {:src "./images/paul_pagel_photo.png"}]
 				[:img.hover {:src "./images/paul_pagel_hover.png"}]
@@ -97,6 +87,16 @@
 						[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
 						[:a {:href "http://www.8thlight.com/our-team/mark-grant"} "profile"]
 						[:a {:href "http://blog.8thlight.com/mark-grant/archive.html"} "blog"]]]]
+			[:li#justin_martin
+				[:img {:src "./images/justin_martin_photo.png"}]
+				[:img.hover {:src "./images/justin_martin_hover.png"}]
+				[:img {:src "./images/justin_martin_frame.png"}]
+				[:a "justin martin"]
+				[:figcaption.left
+					[:h1 "justin martin"]
+					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
+					[:a "profile"]
+					[:a {:href "http://blog.8thlight.com/justin-martin/archive.html"} "blog"]]]
 			[:li#steve_kim
 				[:img {:src "./images/steve_kim_photo.png"}]
 				[:img.hover {:src "./images/steve_kim_hover.png"}]

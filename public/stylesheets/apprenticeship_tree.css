@@ -168,7 +168,7 @@ li.slide figcaption {
 }
 li.slide figcaption a {
 	position: static !important;
-	padding-left: 15px;
+	padding-right: 15px;
 }
 li.slide figcaption.left {
 	left: -180px;
@@ -220,41 +220,41 @@ ol li:hover img.hover {
 	top: 300px;
 	left: 7px;
 }
-#justin_martin {
+#paul_pagel {
 	top: 350px;
-	left: 10px;
+	left: 340px;
+}
+#eric_meyer {
+	top: 680px;
+	left: 375px;
+}
+#brian_pratt {
+	top: 990px;
+	left: 380px;
+}
+#kevin_liddle {
+	top: 1310px;
+	left: 380px;
+}
+#patrick_gombert {
+	top: 1630px;
+	left: 380px;
+}
+#colin_jones {
+	top: 400px;
+	left: 20px;
+}
+#mark_grant {
+	top: 750px;
+	left: 20px;
+}
+#justin_martin {
+	top: 1080px;
+	left: 40px;
 }
 #justin_martin a {
 	width: 230px;
 	top: 235px;
-}
-#paul_pagel {
-	top: 420px;
-	left: 300px;
-}
-#eric_meyer {
-	top: 740px;
-	left: 375px;
-}
-#brian_pratt {
-	top: 1050px;
-	left: 380px;
-}
-#kevin_liddle {
-	top: 1370px;
-	left: 380px;
-}
-#patrick_gombert {
-	top: 1680px;
-	left: 380px;
-}
-#colin_jones {
-	top: 700px;
-	left: 0px;
-}
-#mark_grant {
-	top: 1020px;
-	left: 5px;
 }
 #steve_kim {
 	top: 1360px;
@@ -362,6 +362,7 @@ ol li:hover img.hover {
 	}
 	li.slide figcaption h1 {
 		display: inline;
+		margin-right: 22px;
 	}
 	li.slide figcaption p {
 		display: none;
@@ -398,6 +399,7 @@ ol li:hover img.hover {
 	}
 	li.slide figcaption h1 {
 		display: inline;
+		margin-right: 22px;
 	}
 	li.slide figcaption p {
 		display: none;
@@ -435,6 +437,7 @@ ol li:hover img.hover {
 	}
 	li.slide figcaption h1 {
 		display: inline;
+		margin-right: 22px;
 	}
 	li.slide figcaption p {
 		display: none;
