@@ -34,28 +34,28 @@ a:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }
-a.left {
+a.previous {
 	top: 40px;
 	left: 11px;
 	display: none;
 	z-index: 5;
 }
-a.right {
+a.next {
 	top: 40px;
 	left: 577px;
 	display: none;
 	z-index: 5;
 }
-.center a.left,
-.center a.right {
+.center a.previous,
+.center a.next {
 	display: block;
 }
-a.left:hover img.hover,
-a.right:hover img.hover {
+a.previous:hover img.hover,
+a.next:hover img.hover {
 	display: block;
 }
-a.left:hover img.display,
-a.right:hover img.display {
+a.previous:hover img.display,
+a.next:hover img.display {
 	display: none;
 }
 
@@ -341,7 +341,29 @@ ol li:hover img.hover {
 	div#slideshow {
 		width: 640px;
 		height: 8000px;
-		margin: 0 auto;
+		margin: 0 auto !important;
+	}
+	li.slide {
+		display: block;
+	}
+	a.left img,
+	a.right img {
+		display: none;
+	}
+	figcaption.left,
+	figcaption.right {
+		left: 30px !important;
+		top: 270px !important;
+	}
+}
+@media only screen and (max-device-width: 480px) {
+	nav {
+		display: none;
+	}
+	div#slideshow {
+		width: 640px;
+		height: 8000px;
+		margin: 0 auto !important;
 	}
 	li.slide {
 		display: block;
@@ -356,37 +378,15 @@ ol li:hover img.hover {
 		top: 270px;
 	}
 }
-@media only screen and (max-device-width: 480px) {
-	nav {
-		display: none;
-	}
-	div#slideshow {
-		width: 640px;
-		height: 8000px;
-		margin: 0 auto;
-	}
-	li.slide {
-		display: block;
-	}
-	a.left img,
-	a.right img {
-		display: none;
-	}
-	figcaption.left,
-	figcaption.right {
-		left: 30px;
-		top: 300px;
-	}
-}
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
 	nav {
 		display: none;
 	}
 	div#slideshow {
 		width: 640px;
 		height: 8000px;
-		margin: 0 auto;
+		margin: 0 auto !important;
 	}
 	li.slide {
 		display: block;
@@ -397,8 +397,9 @@ ol li:hover img.hover {
 	}
 	figcaption.left,
 	figcaption.right {
-		left: 30px;
-		top: 300px;
+		position: fixed;
+		top: 0px;
+		left: 0px;
 	}
 }
 

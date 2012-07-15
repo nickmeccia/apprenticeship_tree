@@ -1,5 +1,5 @@
 [:li.slide.four
-	[:a.left {:href "#"}
+	[:a.previous {:href "#"}
 		[:img.display {:src "./images/hand_left.png"}]
 		[:img.hover {:src "./images/hand_left_hover.png"}]]
 	[:img {:src "./images/patriarchy_4.png"}]
@@ -11,7 +11,7 @@
 			[:a {:href "http://www.8thlight.com/our-team/cory-foy"} "cory foy"]
 			[:figcaption.right
 				[:h1 "cory foy"]
-				[:p "Blah blah blah blah blah blah blah blah blah blah blah."]
+				[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
 				[:a {:href "http://blog.8thlight.com/cory-foy/archive.html"} "blog"]]]
 		[:ol
 			[:li#justin_herrick
@@ -21,8 +21,8 @@
 				[:a {:href "http://www.8thlight.com/our-team/justin-herrick"} "justin herrick"]
 				[:figcaption.right
 					[:h1 "justin herrick"]
-					[:p "Blah blah blah blah blah blah blah blah blah blah blah."]
+					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
 					[:a {:href "http://blog.8thlight.com/justin-herrick/archive.html"} "blog"]]]]]
-	[:a.right {:href "#"}
+	[:a.next {:href "#"}
 		[:img.display {:src "./images/hand_right.png"}]
 		[:img.hover {:src "./images/hand_right_hover.png"}]]]

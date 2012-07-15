@@ -1,3 +1,8 @@
+//  A simple slideshow
+//  by Mark Grant
+//  https://github.com/mg50/Carousel
+
+
 function Carousel(selector) {
     this.$el = $(selector);
     this.parent = this.$el.parent();
@@ -10,7 +15,7 @@ function Carousel(selector) {
 
 Carousel.prototype.makeLinksWork = function() {
     var self = this;
-    this.$el.delegate('a.right', 'click', function() {
+    this.$el.delegate('a.next', 'click', function() {
         var idx = self.indexOfCenter();
         if(idx === self.NumChildren - 1) idx = 0;
         else idx++;
@@ -18,7 +23,7 @@ Carousel.prototype.makeLinksWork = function() {
         self.centerElement(self.$el.children().eq(idx), true)
     })
 
-    this.$el.delegate('a.left', 'click', function() {
+    this.$el.delegate('a.previous', 'click', function() {
         var idx = self.indexOfCenter();
         if(idx === 0) idx = self.numChildren - 1;
         else idx--;
@@ -126,21 +131,3 @@ Carousel.prototype.hookUp = function(name, liSel) {
         self.centerElement(el, true);
     })
 }
-
-
-$(window).load(function() {
-    c = new Carousel('ul.slides');
-    c.centerElement(c.$el.children().eq(2));
-    var links = {
-        '.jim': '.one',
-        '.craig': '.two',
-        '.micah': '.three',
-        '.cory': '.four',
-        '.doug': '.five',
-        '.billy': '.six',
-        '.eric': '.seven'
-    }
-    for(sel in links) {
-        c.hookUp(sel, links[sel]);
-    }
-})

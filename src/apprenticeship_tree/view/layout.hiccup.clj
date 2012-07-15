@@ -7,8 +7,8 @@
   (include-css "/stylesheets/reset.css")
   (include-css "/stylesheets/apprenticeship_tree.css")
   (include-js "/javascript/jquery.js")
-	(include-js "/javascript/carousel.js")
   (include-js "/javascript/apprenticeship_tree.js")
+	(include-js "/javascript/carousel.js")
 ]
  [:body
   (eval (:template-body joodo.views/*view-context*))

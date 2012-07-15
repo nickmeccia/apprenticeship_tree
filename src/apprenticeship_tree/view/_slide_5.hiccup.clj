@@ -1,5 +1,5 @@
 [:li.slide.five
-	[:a.left {:href "#"}
+	[:a.previous {:href "#"}
 		[:img.display {:src "./images/hand_left.png"}]
 		[:img.hover {:src "./images/hand_left_hover.png"}]]
 	[:img {:src "./images/patriarchy_5.png"}]
@@ -11,7 +11,7 @@
 			[:a{:href "http://www.8thlight.com/our-team/doug-bradbury"} "doug bradbury"]
 			[:figcaption.left
 				[:h1 "doug bradbury"]
-				[:p "Blah blah blah blah blah blah blah blah blah blah blah."]
+				[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
 				[:a {:href "http://blog.8thlight.com/doug-bradbury/archive.html"} "blog"]]]
 		[:ol
 			[:li#li-hsuan_lung
@@ -21,7 +21,7 @@
 				[:a {:href "http://www.8thlight.com/our-team/lihsuan-lung"} "li-hsuan lung"]
 				[:figcaption.left
 					[:h1 "li-hsuan lung"]
-					[:p "Blah blah blah blah blah blah blah blah blah blah blah."]
+					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
 					[:a {:href "http://blog.8thlight.com/lihsuan-lung/archive.html"} "blog"]]]
 			[:li#josh_cheek
 				[:img {:src "./images/josh_cheek_photo.png"}]
@@ -30,7 +30,7 @@
 				[:a {:href "http://www.8thlight.com/our-team/josh-cheek"} "josh cheek"]
 				[:figcaption.right
 					[:h1 "josh cheek"]
-					[:p "Blah blah blah blah blah blah blah blah blah blah blah."]
+					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
 					[:a {:href "http://blog.8thlight.com/josh-cheek/archive.html"} "blog"]]]
 			[:li#cymen_vig
 				[:img {:src "./images/cymen_vig_photo.png"}]
@@ -39,8 +39,8 @@
 				[:a {:href "http://www.8thlight.com/our-team/cymen-vig"} "cymen vig"]
 				[:figcaption.left
 					[:h1 "cymen vig"]
-					[:p "Blah blah blah blah blah blah blah blah blah blah blah."]
+					[:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem nunc, eget ullamcorper leo. Fusce rhoncus luctus tristique. Vestibulum id turpis est nunc."]
 					[:a {:href "http://blog.8thlight.com/cymen-vig/archive.html"} "blog"]]]]]
-	[:a.right {:href "#"}
+	[:a.next {:href "#"}
 		[:img.display {:src "./images/hand_right.png"}]
 		[:img.hover {:src "./images/hand_right_hover.png"}]]]
